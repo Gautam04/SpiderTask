@@ -56,6 +56,7 @@ public class MainActivity extends Activity {
                         if(input.length()>0)
                         {
                             adpter.add(input);
+                            Gtext.setText(null);
 
 
                         }
