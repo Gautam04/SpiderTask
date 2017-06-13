@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gautamnarayanan.practice2.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:id="@+id/glayout"
+        android:layout_width="377dp"
+        android:layout_height="502dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <EditText
+            android:id="@+id/gtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:width="75dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="63dp"
+            android:layout_marginStart="63dp" />
+
+        <Button
+            android:id="@+id/gbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gtext"
+            android:layout_alignStart="@+id/gtext"
+            android:layout_below="@+id/gtext"
+            android:layout_marginTop="42dp"
+            android:text="Add" />
+
+        <ListView
+            android:id="@+id/glist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/gbutton"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="91dp" />
+
+        <Button
+            android:id="@+id/Gbutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_above="@+id/glist"
+            android:layout_alignLeft="@+id/gtext2"
+            android:layout_alignStart="@+id/gtext2" />
+
+        <EditText
+            android:id="@+id/gtext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="75dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_alignBaseline="@+id/gtext"
+            android:layout_alignBottom="@+id/gtext"
+            android:layout_toRightOf="@+id/gbutton"
+            android:layout_toEndOf="@+id/gbutton" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
