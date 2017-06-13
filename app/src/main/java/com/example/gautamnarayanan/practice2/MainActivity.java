@@ -79,6 +79,7 @@ public class MainActivity extends Activity {
                             else
                             {String item = adpter.getItem(pos - 1);
                             adpter.remove(item);}
+                            Gtext2.setText(null);
 
                         }
                     }
